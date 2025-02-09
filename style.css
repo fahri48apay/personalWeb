@@ -229,23 +229,23 @@ span {
 @keyframes words {
     0%,
     20%{
-        content: "CCTV Operator";
+        content: "Security";
     }
     21%,
     40%{
-        content: "Web Designer";
+        content: "CCTV Operator";
     }
     41%,
     60%{
-        content: "Frontend Developer";
+        content: "Web Designer";
     }
     61%,
     80%{
-        content: "wanna be Fullstack Developer ";
+        content: "Frontend Developer";
     }
     81%,
     100%{
-        content: "Security";
+        content: "wanna be Fullstack Developer";
     }
 }
 @keyframes typing{
