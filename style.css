@@ -17,7 +17,7 @@
 }
 
 html {
-    font-size: 60%;
+    /* font-size: 80%; */
     overflow-x: hidden;
 }
 body {
@@ -273,6 +273,7 @@ span {
 
     }
 }
+
 /* Section Education */
 .heading {
     font-size: 8rem;
@@ -369,51 +370,59 @@ span {
     background-color: var(--bg-color);
     width: 50px;
 }
-.services{
-    background:var(--bg-color);
+
+/* section Experience */
+.experience {
+    background: var(--bg-color);
     color: black;
+    padding: 4rem 2rem;
 }
-.services-container{
+
+.experience-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
 }
-.service-box{
+
+.experience-box {
     background-color: var(--main-color);
-    height: 300px;
-    border-radius: 3rem;
-    border: 5px solid transparent;
+    height: auto;
+    border-radius: 2rem;
+    border: 3px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    padding: 2rem;
 }
-.service-box:hover{
-    background:white;
+
+.experience-box:hover {
+    background: white;
     color: black;
-    border: 5px solid var(--main-color);
+    border: 3px solid var(--main-color);
     transform: scale(1.03);
 }
-.service-box .service-info{
+
+.experience-box .experience-info {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-.service-info h4{
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 2;
+
+.experience-info h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
 }
-.service-info p{
-    font-size: 1.6rem;
-    font-weight: 600;
-    max-height: 100px;
-    line-height: 1.7;
-    margin: auto;
+
+.experience-info p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 0.5rem;
 }
+
 /* Section Testimonials */
 .testimonials{
     background: var(--second-bg-color);
@@ -566,7 +575,7 @@ span {
     html{
         font-size: 55%;
     }
-    .services-container{
+    .experience-container{
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
@@ -594,7 +603,7 @@ span {
     .timeline-dot{
         left: 0;
     }
-    .services{
+    .experience{
         padding-bottom: 7rem;
     }
     .testimonials .wrapper{
@@ -652,10 +661,10 @@ span {
     .home-img img{
         width: 56vw;
     }
-    .services h2{
+    .experience h2{
         margin-bottom: 3rem;
     }
-    .services-container{
+    .experience-container{
         grid-template-columns: repeat(1,1fr);
     }
 }
