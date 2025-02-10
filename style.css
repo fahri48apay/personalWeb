@@ -378,7 +378,10 @@ span {
     padding: 4rem 2rem;
 }
 .experience .heading {
+    font-size: 8rem;
     color: white;
+    text-align: center;
+    margin: 7rem 0;
 }
 
 .experience-container {
