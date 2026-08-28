@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <meta name="description" content="Portofolio Mohammad Fahri Saleh — Operator CCTV berpengalaman 6+ tahun, calon Frontend & Fullstack Developer.">
+    <meta name="theme-color" content="#080808">
+    <title>Mohammad Fahri Saleh — Portofolio | CCTV & Frontend Developer</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
 </head>
 <body>
     <!-- Header Navigation -->
     <header class="header">
-        <a href="#home" class="logo">M Fahri
-            <span>Saleh</span></a>
-        
-            <i class='bx bx-menu' id="menu-icon"></i>
-        
-            <nav class="navbar">
+        <a href="#home" class="logo">M Fahri <span>Saleh</span></a>
+
+        <button id="menu-icon" class="menu-button bx bx-menu" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navbar"></button>
+
+        <nav class="navbar" id="navbar" aria-label="Navigasi utama">
             <a href="#home" class="active">Home</a>
             <a href="#education">Education</a>
             <a href="#experience">Experience</a>
@@ -24,232 +31,232 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <!-- Home image  -->
+
+    <!-- Beranda -->
     <section class="home" id="home">
         <div class="home-content">
+            <h1>Halo, Saya <span>Fahri</span></h1>
+            <h3 class="text-animation">Saya seorang <span></span></h3>
+            <p>Sebagai Operator CCTV dengan pengalaman lebih dari 6 tahun, saya terbiasa berpikir kritis dalam menjalankan tugas — baik memantau kondisi area maupun mengawasi pemasangan unit CCTV.<br>
+            Saat ini saya sedang menempuh pendidikan Teknik Informatika di STIKOM-CKI dan aktif mengikuti berbagai kursus pendukung, agar tidak tertinggal dengan perkembangan teknologi web — terutama sebagai frontend developer dan fullstack developer.</p>
 
-            <h1> Hi, It's <span>Fahri</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>As a CCTV Operator for more than 6 years, I am able to think critically in carrying out my duties, both monitoring conditions in the area and supervising the installation of CCTV units.<br/>
-            I am currently studying at Stikom-CKI majoring in informatics engineering and also taking various courses that support my knowledge, so as not to be left behind with developments in web development technology, especially frontend-developers and fullstack-developers.</p>
-            
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/mohammad-fahri-s-934b9a264/"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/fahri48apay"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/fahri_apay/"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="https://web.facebook.com/apay4894/"><i class='bx bxl-facebook-square'></i></a>
-                <a href="https://wa.me/6285179944894"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="https://www.linkedin.com/in/mohammad-fahri-s-934b9a264/" aria-label="LinkedIn Mohammad Fahri Saleh"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/fahri48apay" aria-label="GitHub fahri48apay"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/fahri_apay/" aria-label="Instagram fahri_apay"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://web.facebook.com/apay4894/" aria-label="Facebook apay4894"><i class='bx bxl-facebook-square'></i></a>
+                <a href="https://wa.me/6285179944894" aria-label="WhatsApp Mohammad Fahri Saleh"><i class='bx bxl-whatsapp'></i></a>
             </div>
+
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-                <a href="#contact" class="btn">Contact</a>
-                <a href="https://drive.google.com/file/d/1GFbLUhDVQUG6_2-vKMFAFZUPTDWb1Yj4/view?usp=drive_link" class="btn">Download CV</a>
+                <a href="#contact" class="btn">Ajak Saya Bekerja</a>
+                <a href="https://drive.google.com/file/d/1GFbLUhDVQUG6_2-vKMFAFZUPTDWb1Yj4/view?usp=drive_link" class="btn btn-outline">Download CV</a>
             </div>
         </div>
-            <div class="home-img">
-                <img src="Profil Picture.jpg" alt="">
-            </div>
+
+        <div class="home-img">
+            <img src="foto-profil.jpg" alt="Foto Mohammad Fahri Saleh" width="460" height="460">
+        </div>
     </section>
+
     <!-- Section Education -->
     <section class="education" id="education">
         <h2 class="heading">Education</h2>
         <div class="timeline-items">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2000 - 2006</div>
-                    <div class="timeline-content">
-                        <h3>Elementary School</h3>
-                        <p>SD Alhilaal-3 Ambon <br> Certified</p>
-                        <!-- <img src="/Ijazah/SD_Alhilaal3.jpg" alt="Ijazah SD"class="Ijazah"> -->
-                    </div>
-                
-            </div>
-        
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2006 - 2009</div>
-                    <div class="timeline-content">
-                        <h3>Junior High School</h3>
-                        <p>Smp Negeri 7 Ambon <br/> Certified</p>
-                        <p></p>
-                        <!-- <img src="/Ijazah/SMP_Negeri7.jpg" alt="ijazah SMP" class="Ijazah"> -->
-                    </div>
-                
+                <div class="timeline-date">2000 - 2006</div>
+                <div class="timeline-content">
+                    <h3>Elementary School</h3>
+                    <p>SD Alhilaal-3 Ambon<br>Status: Lulus</p>
+                </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2009 - 2012</div>
-                    <div class="timeline-content">
-                        <h3>Senior High School</h3>
-                        <p>SMA Negeri 11 Ambon <br/>  Certified</p>
-                        <p>Jurusan IPS.</p>
-                        <!-- <img src="/Ijazah/SMA_Negeri11.jpg" alt="ijazah SMA" class="ijazah"> -->
-                    </div>
-                
+                <div class="timeline-date">2006 - 2009</div>
+                <div class="timeline-content">
+                    <h3>Junior High School</h3>
+                    <p>SMP Negeri 7 Ambon<br>Status: Lulus</p>
+                </div>
             </div>
-        
+
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2024 - till now</div>
-                    <div class="timeline-content">
-                        <h3>University</h3>
-                        <p>STIKOM CKI <br/> jurusan Teknik Informatika <br> not Certified yet</p>
-                        <p>Semester Awal September 2024</p>
-                        <!-- <img src="/Ijazah/SMA_Negeri11.jpg" alt="ijazah SMA" class="ijazah"> -->
-                    </div>
-                
+                <div class="timeline-date">2009 - 2012</div>
+                <div class="timeline-content">
+                    <h3>Senior High School</h3>
+                    <p>SMA Negeri 11 Ambon<br>Status: Lulus<br>Jurusan IPS</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 - sekarang</div>
+                <div class="timeline-content">
+                    <h3>University</h3>
+                    <p>STIKOM CKI<br>Teknik Informatika<br>Status: Dalam proses</p>
+                    <p>Mulai September 2024</p>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Section experience -->
+
+    <!-- Section Experience -->
     <section class="experience" id="experience">
         <h2 class="heading">Experience</h2>
         <div class="experience-container">
-
             <div class="experience-box">
                 <div class="experience-info">
-                    <h4>Staff CCTV (Under IT) - NAVAL GROUP </h4>
-                    <h2>2024 - 2025</h2> <br>
-                    <p>Sebagai Staff Perancang Topologi Jaringan CCTV dan Instalasi Command Center, maintenance dan monitoring 3 area pabrik pengolahan getah area Aceh,Batang,Medan. Status : Non-Active</p>
+                    <h3>Staff CCTV (Under IT) — NAVAL GROUP</h3>
+                    <p class="period">2024 - 2025</p>
+                    <p>Perancang topologi jaringan CCTV dan instalasi Command Center, maintenance dan monitoring 3 area pabrik pengolahan getah (Aceh, Batang, Medan). Status: Selesai.</p>
                 </div>
             </div>
 
             <div class="experience-box">
                 <div class="experience-info">
-                    <h4>Operator CCTV - KOTA KASABLANKA (PAKUWON)</h4>
-                    <h2>2021 - 2024</h2> <br>
-                    <p>Sebagai operator CCTV yang bertugas melakukan pengawasan pergerakan maupun kegiatan di area tugas, maintenance dan service unit. Status : Non-Active</p>
+                    <h3>Operator CCTV — KOTA KASABLANKA (PAKUWON)</h3>
+                    <p class="period">2021 - 2024</p>
+                    <p>Mengawasi pergerakan dan kegiatan di area tugas, maintenance dan service unit. Status: Selesai.</p>
                 </div>
             </div>
 
             <div class="experience-box">
                 <div class="experience-info">
-                    <h4>Operator CCTV - GRAND GALAXY PARK (ASRI)</h4>
-                    <h2>2018 - 2021</h2> <br>
-                    <p>Sebagai Operator CCTV yang bertugas melakukan pengawasan pergerakan maupun kegiatan di area tugas, maintenance dan service unit. <br> <br> Status : Non-Active</p>
+                    <h3>Operator CCTV — GRAND GALAXY PARK (ASRI)</h3>
+                    <p class="period">2018 - 2021</p>
+                    <p>Mengawasi pergerakan dan kegiatan di area tugas, maintenance dan service unit. Status: Selesai.</p>
                 </div>
             </div>
 
             <div class="experience-box">
                 <div class="experience-info">
-                    <h4>Operator CCTV - PIK (ASRI)</h4>
-                    <h2>2017 - 2018</h2> <br>
-                    <p>Sebagai Operator CCTV yang bertugas melakukan pengawasan pergerakan maupun kegiatan di area tugas, maintenance dan service unit. <br><br>Status : Non-Active.</p>
+                    <h3>Operator CCTV — PIK (ASRI)</h3>
+                    <p class="period">2017 - 2018</p>
+                    <p>Mengawasi pergerakan dan kegiatan di area tugas, maintenance dan service unit. Status: Selesai.</p>
                 </div>
             </div>
 
             <div class="experience-box">
                 <div class="experience-info">
-                    <h4>Security Project</h4>
-                    <h2>2013 - 2017</h2>
-                    <p>Sebagai Petugas keamanan Project MRT cp 105 (Bendungan Hilir) SOWJ, melakukan pengawasan area project dan segala aktifitas dalam ruang lingkup project. <br><br> Status : Non-Active<p>
+                    <h3>Security Project</h3>
+                    <p class="period">2013 - 2017</p>
+                    <p>Petugas keamanan proyek MRT CP 105 (Bendungan Hilir) SOWJ — mengawasi area proyek dan seluruh aktivitas dalam ruang lingkup proyek. Status: Selesai.</p>
                 </div>
             </div>
         </div>
-    </section></div>
+    </section>
+
     <!-- Section Testimonials -->
-     <section class="testimonials" id="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="testimonials-box">
-            <h2 class="heading">Testimonials</h2>
+            <h2 class="heading">Testimoni</h2>
             <div class="wrapper">
                 <div class="testimonial-item">
-                    <img src="Untung Slamet.png" alt="">
+                    <img src="Untung Slamet.png" alt="Foto Untung Slamet" width="240" height="240">
                     <h2>UNTUNG SLAMET</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
+                    <div class="rating" role="img" aria-label="Rating: 5 dari 5 bintang">
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
                     </div>
                     <p>Chief KOTA KASABLANKA (PAKUWON)</p>
                 </div>
 
                 <div class="testimonial-item">
-                    <img src="AliBambang.jpg" alt="">
+                    <img src="AliBambang.jpg" alt="Foto Ali Bambang" width="240" height="240">
                     <h2>ALI BAMBANG</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
+                    <div class="rating" role="img" aria-label="Rating: 5 dari 5 bintang">
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
                     </div>
                     <p>Chief GRAND GALAXY PARK mall (ASRI)</p>
                 </div>
 
                 <div class="testimonial-item">
-                    <img src="AliBambang.jpg" alt="">
+                    <div class="avatar-mono" role="img" aria-label="Avatar inisial AGUNG">AG</div>
                     <h2>AGUNG</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
+                    <div class="rating" role="img" aria-label="Rating: 5 dari 5 bintang">
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
                     </div>
                     <p>Chief PIK (ASRI)</p>
                 </div>
 
                 <div class="testimonial-item">
-                    <img src="hero.jpg" alt="">
+                    <div class="avatar-mono" role="img" aria-label="Avatar inisial HERO NOVIANDA">HN</div>
                     <h2>Hero Novianda</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
-                        <i class='bx bxs-star' id="star" ></i>
+                    <div class="rating" role="img" aria-label="Rating: 5 dari 5 bintang">
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
+                        <i class='bx bxs-star star'></i>
                     </div>
                     <p>Chief LMJ PIK</p>
                 </div>
             </div>
         </div>
-     </section>
-     <!-- Section Contact -->
-      <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+    </section>
 
-        <form action="" method="post">
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Hubungi <span>Saya</span></h2>
+
+        <form id="contact-form" action="https://wa.me/6285179944894" method="get">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" name="NAMA" placeholder="Full Name">
-                    <input type="email" name="EMAIL" placeholder="Email">
+                    <label class="sr-only" for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" autocomplete="name" required>
+                    <label class="sr-only" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" name="NUMBER" placeholder="Phone Number">
-                    <input type="text" name="SUBJECT" placeholder="Subject">
+                    <label class="sr-only" for="telepon">Nomor Telepon</label>
+                    <input type="tel" id="telepon" name="telepon" placeholder="Nomor Telepon" autocomplete="tel" inputmode="tel">
+                    <label class="sr-only" for="subjek">Subyek / Perihal</label>
+                    <input type="text" id="subjek" name="subjek" placeholder="Subyek / Perihal" autocomplete="off">
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="PESAN" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <label class="sr-only" for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" cols="30" rows="10" placeholder="Tulis pesan Anda…" required></textarea>
+                <button type="submit" class="btn">Kirim via WhatsApp</button>
+                <p class="form-hint">Pesan akan diteruskan ke WhatsApp Fahri — tanpa memerlukan server.</p>
             </div>
         </form>
-      </section>
+    </section>
 
-      <footer class="footer">
+    <footer class="footer">
         <div class="social">
-            <a href="https://www.linkedin.com/in/mohammad-fahri-s-934b9a264/"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/fahri48apay"><i class='bx bxl-github'></i></a>
-            <a href="https://www.instagram.com/fahri_apay/"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="https://web.facebook.com/apay4894/"><i class='bx bxl-facebook-square'></i></a>
-            <a href="https://wa.me/6285179944894"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="https://www.linkedin.com/in/mohammad-fahri-s-934b9a264/" aria-label="LinkedIn Mohammad Fahri Saleh"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/fahri48apay" aria-label="GitHub fahri48apay"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/fahri_apay/" aria-label="Instagram fahri_apay"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://web.facebook.com/apay4894/" aria-label="Facebook apay4894"><i class='bx bxl-facebook-square'></i></a>
+            <a href="https://wa.me/6285179944894" aria-label="WhatsApp Mohammad Fahri Saleh"><i class='bx bxl-whatsapp'></i></a>
         </div>
 
         <ul class="list">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">experience</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Testimonials</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <p class="copyright">
             &#169; M Fahri Saleh | All Rights Reserved
         </p>
-      </footer>
+    </footer>
 
     <script src="script.js"></script>
 </body>
