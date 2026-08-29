@@ -59,31 +59,6 @@ personalWeb/
 
 ---
 
-## 🌍 Deploy ke GitHub Pages
-
-1. Buat repo baru (misal `personalWeb`) lalu `git push` konten ini ke `main`.
-2. Buka **Settings → Pages** di repo.
-3. Pilih **Deploy from a branch**, branch `main`, folder `/ (root)`.
-4. Klik **Save** — situs langsung live di `https://<username>.github.io/personalWeb/`.
-
-> Alur ini memakai GitHub Pages klasik (bukan Actions). Riwayat repo ini pernah
-> memakai `static.yml` (Actions) — file tersebut sudah dihapus dari branch `main`.
-
----
-
-## ✍️ Kustomisasi Cepat
-
-| Ingin mengubah | Edit di |
-| --- | --- |
-| Teks hero & profil | `index.html` → section `#home` |
-| Riwayat pendidikan | `index.html` → section `#education` |
-| Pengalaman kerja | `index.html` → section `#experience` |
-| Testimoni | `index.html` → section `#testimonials` |
-| Nomor WhatsApp form | `index.html` (`action`) & `script.js` (URL `wa.me/...`) |
-| Warna tema | `style.css` → `:root` (`--main-color`, `--bg-color`) |
-
----
-
 ## 📬 Kontak
 
 - **LinkedIn:** [Mohammad Fahri Saleh](https://www.linkedin.com/in/mohammad-fahri-s-934b9a264/)
