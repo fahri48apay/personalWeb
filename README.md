@@ -51,10 +51,10 @@ personalWeb/
 ├── style.css         # Tokens, layout, animasi, media query
 ├── script.js         # Scroll-spy, menu mobile, form WhatsApp
 ├── favicon.svg       # Ikon tab browser (F cyan)
-├── foto-profil.jpg   # Foto profil hero
-├── Untung Slamet.png # Foto testimoni
-├── AliBambang.jpg    # Foto testimoni
-└── hero.jpg          # Aset foto cadangan
+├── foto-profil.svg    # Foto profil hero
+├── Untung Slamet.png  # Foto testimoni
+├── AliBambang.svg     # Foto testimoni
+└── hero.svg           # Aset foto cadangan
 ```
 
 ---

@@ -1303,3 +1303,10 @@ html.js [data-reveal].in-view {
         content: "Frontend Developer";
     }
 }
+
+@media (min-width: 1286px) {
+    .header { padding: 2rem 8% 2rem; }
+    .logo { font-size: 2.4rem; }
+    .navbar a { font-size: 1.4rem; margin-left: 2.6rem; }
+    .menu-button { font-size: 2.6rem; }
+}
