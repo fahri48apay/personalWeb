@@ -59,24 +59,6 @@ personalWeb/
 
 ---
 
-## 🚀 Menjalankan Secara Lokal
-
-Repositori ini murni statis — cukup layani folder dengan server file apa pun:
-
-```bash
-# Opsi 1: Python
-python3 -m http.server 8000
-
-# Opsi 2: Node live-server (sudah terpasang global di beberapa environment)
-npx live-server
-
-# Opsi 3: VS Code → ekstensi "Live Server" → klik Go Live
-```
-
-Buka `http://localhost:8000` di browser.
-
----
-
 ## 🌍 Deploy ke GitHub Pages
 
 1. Buat repo baru (misal `personalWeb`) lalu `git push` konten ini ke `main`.
