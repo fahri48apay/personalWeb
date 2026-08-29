@@ -16,7 +16,12 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
 </head>
-<body>
+<body class="preload">
+    <!-- Background FX -->
+    <div class="bg-aurora" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-noise" aria-hidden="true"></div>
+
     <!-- Header Navigation -->
     <header class="header">
         <a href="#home" class="logo">M Fahri <span>Saleh</span></a>
@@ -34,6 +39,16 @@
 
     <!-- Beranda -->
     <section class="home" id="home">
+        <div class="hero-fx" aria-hidden="true">
+            <span class="hero-dot" style="top: 18%; left: 12%; --d: 9s; --delay: -2s;"></span>
+            <span class="hero-dot" style="top: 16%; left: 78%; --d: 11s; --delay: -5s;"></span>
+            <span class="hero-dot" style="top: 78%; left: 90%; --d: 13s; --delay: -8s;"></span>
+            <span class="hero-dot" style="top: 82%; left: 10%; --d: 10s; --delay: -3s;"></span>
+            <span class="hero-dot" style="top: 6%; left: 45%; --d: 12s; --delay: -7s;"></span>
+            <span class="hero-dot" style="top: 60%; left: 4%; --d: 9.5s; --delay: -1s;"></span>
+            <span class="hero-dot" style="top: 70%; left: 30%; --d: 16s; --delay: -11s;"></span>
+            <span class="hero-dot" style="top: 48%; left: 92%; --d: 14s; --delay: -9s;"></span>
+        </div>
         <div class="home-content">
             <h1>Halo, Saya <span>Fahri</span></h1>
             <h3 class="text-animation">Saya seorang <span></span></h3>
@@ -49,13 +64,16 @@
             </div>
 
             <div class="btn-group">
-                <a href="#contact" class="btn">Ajak Saya Bekerja</a>
+                <a href="#contact" class="btn btn-auto-shine">Ajak Saya Bekerja</a>
                 <a href="https://drive.google.com/file/d/1GFbLUhDVQUG6_2-vKMFAFZUPTDWb1Yj4/view?usp=drive_link" class="btn btn-outline">Download CV</a>
             </div>
         </div>
 
         <div class="home-img">
-            <img src="foto-profil.jpg" alt="Foto Mohammad Fahri Saleh" width="460" height="460">
+            <div class="img-ring">
+                <img src="foto-profil.jpg" alt="Foto Mohammad Fahri Saleh" width="460" height="460">
+            </div>
+            <span class="badge"><span class="dot" aria-hidden="true"></span> 6+ Tahun Pengalaman</span>
         </div>
     </section>
 
@@ -63,7 +81,9 @@
     <section class="education" id="education">
         <h2 class="heading">Education</h2>
         <div class="timeline-items">
-            <div class="timeline-item">
+            <div class="timeline-fill"></div>
+
+            <div class="timeline-item" data-reveal="left">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2000 - 2006</div>
                 <div class="timeline-content">
@@ -72,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="timeline-item">
+            <div class="timeline-item" data-reveal="right">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2006 - 2009</div>
                 <div class="timeline-content">
@@ -81,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="timeline-item">
+            <div class="timeline-item" data-reveal="left">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2009 - 2012</div>
                 <div class="timeline-content">
@@ -90,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="timeline-item">
+            <div class="timeline-item" data-reveal="right">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2024 - sekarang</div>
                 <div class="timeline-content">
@@ -107,7 +127,8 @@
     <section class="experience" id="experience">
         <h2 class="heading">Experience</h2>
         <div class="experience-container">
-            <div class="experience-box">
+            <div class="experience-box" data-reveal>
+                <div class="experience-icon" aria-hidden="true"><i class='bx bxs-cctv'></i></div>
                 <div class="experience-info">
                     <h3>Staff CCTV — GEDUNG SAHID SUDIRMAN, JAKARTA</h3>
                     <p class="period">Juni 2025 - sekarang</p>
@@ -115,7 +136,8 @@
                 </div>
             </div>
 
-            <div class="experience-box">
+            <div class="experience-box" data-reveal>
+                <div class="experience-icon" aria-hidden="true"><i class='bx bxs-network-chart'></i></div>
                 <div class="experience-info">
                     <h3>Staff CCTV (Under IT) — NAVAL GROUP</h3>
                     <p class="period">2024 - 2025</p>
@@ -123,7 +145,8 @@
                 </div>
             </div>
 
-            <div class="experience-box">
+            <div class="experience-box" data-reveal>
+                <div class="experience-icon" aria-hidden="true"><i class='bx bxs-building-house'></i></div>
                 <div class="experience-info">
                     <h3>Operator CCTV — KOTA KASABLANKA (PAKUWON)</h3>
                     <p class="period">2021 - 2024</p>
@@ -131,7 +154,8 @@
                 </div>
             </div>
 
-            <div class="experience-box">
+            <div class="experience-box" data-reveal>
+                <div class="experience-icon" aria-hidden="true"><i class='bx bxs-store'></i></div>
                 <div class="experience-info">
                     <h3>Operator CCTV — GRAND GALAXY PARK (ASRI)</h3>
                     <p class="period">2018 - 2021</p>
@@ -139,7 +163,8 @@
                 </div>
             </div>
 
-            <div class="experience-box">
+            <div class="experience-box" data-reveal>
+                <div class="experience-icon" aria-hidden="true"><i class='bx bxs-camera'></i></div>
                 <div class="experience-info">
                     <h3>Operator CCTV — PIK (ASRI)</h3>
                     <p class="period">2017 - 2018</p>
@@ -147,7 +172,8 @@
                 </div>
             </div>
 
-            <div class="experience-box">
+            <div class="experience-box" data-reveal>
+                <div class="experience-icon" aria-hidden="true"><i class='bx bxs-shield-alt-2'></i></div>
                 <div class="experience-info">
                     <h3>Security Project</h3>
                     <p class="period">2013 - 2017</p>
@@ -162,7 +188,7 @@
         <div class="testimonials-box">
             <h2 class="heading">Testimoni</h2>
             <div class="wrapper">
-                <div class="testimonial-item">
+                <div class="testimonial-item" data-reveal="zoom">
                     <img src="Untung Slamet.png" alt="Foto Untung Slamet" width="240" height="240">
                     <h2>UNTUNG SLAMET</h2>
                     <div class="rating" role="img" aria-label="Rating: 5 dari 5 bintang">
@@ -175,7 +201,7 @@
                     <p>Chief KOTA KASABLANKA (PAKUWON)</p>
                 </div>
 
-                <div class="testimonial-item">
+                <div class="testimonial-item" data-reveal="zoom">
                     <img src="AliBambang.jpg" alt="Foto Ali Bambang" width="240" height="240">
                     <h2>ALI BAMBANG</h2>
                     <div class="rating" role="img" aria-label="Rating: 5 dari 5 bintang">
@@ -188,7 +214,7 @@
                     <p>Chief GRAND GALAXY PARK mall (ASRI)</p>
                 </div>
 
-                <div class="testimonial-item">
+                <div class="testimonial-item" data-reveal="zoom">
                     <div class="avatar-mono" role="img" aria-label="Avatar inisial AGUNG">AG</div>
                     <h2>AGUNG</h2>
                     <div class="rating" role="img" aria-label="Rating: 5 dari 5 bintang">
@@ -201,7 +227,7 @@
                     <p>Chief PIK (ASRI)</p>
                 </div>
 
-                <div class="testimonial-item">
+                <div class="testimonial-item" data-reveal="zoom">
                     <div class="avatar-mono" role="img" aria-label="Avatar inisial HERO NOVIANDA">HN</div>
                     <h2>Hero Novianda</h2>
                     <div class="rating" role="img" aria-label="Rating: 5 dari 5 bintang">
@@ -221,7 +247,7 @@
     <section class="contact" id="contact">
         <h2 class="heading">Hubungi <span>Saya</span></h2>
 
-        <form id="contact-form" action="https://wa.me/6285179944894" method="get">
+        <form id="contact-form" action="https://wa.me/6285179944894" method="get" data-reveal>
             <div class="input-group">
                 <div class="input-box">
                     <label class="sr-only" for="nama">Nama Lengkap</label>
@@ -240,13 +266,13 @@
             <div class="input-group-2">
                 <label class="sr-only" for="pesan">Pesan</label>
                 <textarea id="pesan" name="pesan" cols="30" rows="10" placeholder="Tulis pesan Anda…" required></textarea>
-                <button type="submit" class="btn">Kirim via WhatsApp</button>
+                <button type="submit" class="btn btn-auto-shine">Kirim via WhatsApp</button>
                 <p class="form-hint">Pesan akan diteruskan ke WhatsApp Fahri — tanpa memerlukan server.</p>
             </div>
         </form>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" data-reveal>
         <div class="social">
             <a href="https://www.linkedin.com/in/mohammad-fahri-s-934b9a264/" aria-label="LinkedIn Mohammad Fahri Saleh"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/fahri48apay" aria-label="GitHub fahri48apay"><i class='bx bxl-github'></i></a>
@@ -266,6 +292,8 @@
             &#169; M Fahri Saleh | All Rights Reserved
         </p>
     </footer>
+
+    <button class="scroll-top" aria-label="Kembali ke atas"><i class='bx bx-up-arrow-alt'></i></button>
 
     <script src="script.js"></script>
 </body>
